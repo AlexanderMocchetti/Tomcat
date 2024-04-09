@@ -33,5 +33,6 @@ public class FormChecker extends HttpServlet {
         stringBuilder.deleteCharAt(stringBuilder.length() - 1);
         pw.println(stringBuilder);
         pw.flush();
+        resp.sendRedirect("/");
     }
 }
